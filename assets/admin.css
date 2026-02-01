@@ -1,0 +1,42 @@
+/* Admin styles for Product Variation Descriptions (Trae) */
+.pvt-admin-help {
+  margin-top: 6px;
+  color: #666;
+  font-size: 12px;
+}
+
+.pvt-dashboard {
+  margin-top: 16px;
+}
+
+.pvt-dashboard-cards {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.pvt-dashboard-card {
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  padding: 16px;
+  border-radius: 6px;
+  min-width: 220px;
+}
+
+.pvt-dashboard-value {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.pvt-dashboard-label {
+  margin-top: 4px;
+  color: #666;
+}
+
+.pvt-dashboard-section {
+  margin-top: 24px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  padding: 16px;
+  border-radius: 6px;
+}
