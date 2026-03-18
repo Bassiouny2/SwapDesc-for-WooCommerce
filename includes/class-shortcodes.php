@@ -123,6 +123,13 @@ class Shortcodes
             return '';
         }
         global $post;
+        if (! $post) {
+            return '';
+        }
+        $product = function_exists('wc_get_product') ? wc_get_product($post->ID) : null;
+        if (! $product || ! $product->is_type('variable')) {
+            return '';
+        }
         $settings = self::get_option_style_settings();
         $attrs = self::build_style_attributes($settings);
         $style_attr = $attrs['style'] ? ' style="' . esc_attr($attrs['style']) . '"' : '';

@@ -7,6 +7,7 @@ SwapDesc for WooCommerce lets you add a rich, per-variation long description and
 - Add a rich text description for each variation
 - Swap the displayed description on variation selection
 - Restore the original description when variations are reset
+- Render dynamic description output only for variable products
 - Compatible with standard WooCommerce templates and Elementor product widgets
 
 ## Requirements
@@ -37,8 +38,9 @@ Use this shortcode on single product templates:
 
 Notes:
 
-- The shortcode renders only on WooCommerce single product pages.
+- The shortcode renders only on WooCommerce single variable product pages.
 - It outputs the main description container that gets swapped when a variation is selected.
+- For simple/external/grouped products, shortcode output is empty on the frontend.
 - Global styling for this shortcode can be configured from **WooCommerce → Variation Descriptions**.
 
 ### Elementor
@@ -54,6 +56,7 @@ Notes:
 
 - Widget name: `SwapDesc Description`
 - Widget internal name: `swapdesc_description`
+- The widget outputs only for variable products on frontend product pages.
 - You can style typography, colors, spacing, and border directly from the widget Style controls.
 
 ## Development Notes

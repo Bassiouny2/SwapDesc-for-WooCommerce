@@ -4,7 +4,7 @@
  * Plugin Name: SwapDesc for WooCommerce
  * Plugin URI: https://abprojects.org/ahmed-magdy/
  * Description: Allows WooCommerce product variations to have their own long descriptions and dynamically swaps the main product description when a variation is selected. Elementor compatible.
- * Version: 1.1.0
+ * Version: 1.2.0
  * Author: Ahmed Magdy
  * Author URI: https://abprojects.org/ahmed-magdy/
  * License: GPLv2 or later

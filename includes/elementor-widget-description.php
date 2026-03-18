@@ -174,6 +174,10 @@ class Elementor_Description_Widget extends \Elementor\Widget_Base {
             echo '<div class="pvt-description-root"' . $style_attr . $bg_attr . '>' . esc_html__( 'Select a product to preview the variation description.', 'product-var-trea' ) . '</div>';
             return;
         }
+        $product = function_exists( 'wc_get_product' ) ? wc_get_product( $product_id ) : null;
+        if ( ! $product || ! $product->is_type( 'variable' ) ) {
+            return;
+        }
         echo '<div id="pvt-description-root" class="pvt-description-root" data-product-id="' . esc_attr( $product_id ) . '"' . $style_attr . $bg_attr . '>';
         echo apply_filters( 'the_content', get_post_field( 'post_content', $product_id ) );
         echo '</div>';
